@@ -1,6 +1,6 @@
 # Ember-cli-sticky
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon to integrate sticky.js
 
 ## Installation
 
@@ -12,6 +12,14 @@ This README outlines the details of collaborating on this Ember addon.
 
 * `ember server`
 * Visit your app at http://localhost:4200.
+
+## Usage
+
+```js
+{{#sticky}}
+<nav ... />
+{{/sticky}}
+```
 
 ## Running Tests
 

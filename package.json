@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-sticky",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1",
+  "description": "Ember addon for Sticky.js.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,7 +35,9 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "sticky",
+    "sticky.js"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"
