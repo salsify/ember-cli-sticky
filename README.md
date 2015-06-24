@@ -5,7 +5,6 @@ Ember addon to integrate sticky.js
 ## Installation
 
 * `ember install ember-cli-sticky`
-* `ember g ember-cli-sticky`
 
 ## Running
 
