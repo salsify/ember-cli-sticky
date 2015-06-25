@@ -4,11 +4,11 @@ export default Ember.Component.extend({
   tagName: 'div',
   classNames: 'sticky',
 
-  setupSticky: function() {
+  setupSticky: Ember.on('didInsertElement', function() {
     this.$().sticky({topSpacing: 0});
-  }.on('didInsertElement'),
+  }),
 
-  teardownSticky: function() {
+  teardownSticky: Ember.on('willDestroyElement', function() {
     this.$().unstick();
-  }.on('willDestroyElement'),
+  }),
 });
