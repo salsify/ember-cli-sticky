@@ -3,10 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
+
+## [0.5.0] - 2016-04-13
 ### Changed
 - Pull jQuery sticky plugin from npm instead of Bower.
 
-## [0.4.0] - 2016-0413
+## [0.4.0] - 2016-04-13
 ### Changed
 - Respect fast boot settings
 
