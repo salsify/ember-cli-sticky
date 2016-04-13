@@ -4,7 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
-## [0.3.0] - 2015-08-5
+## [0.4.0] - 2016-0413
+### Changed
+- Respect fast boot settings
+
+## [0.3.0] - 2015-08-05
 ### Changed
 - Config is general allowing one to pass any valid sticky.js option along
 
