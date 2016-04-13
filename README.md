@@ -2,6 +2,8 @@
 
 Ember addon to integrate jQuery plugin [Sticky.js](http://stickyjs.com/).
 
+[View Demo](https://brandonhilkert.github.io/ember-cli-sticky)
+
 ## Installation
 
 * `ember install ember-cli-sticky`
@@ -45,5 +47,13 @@ export default Ember.Controller.extend({
 ## Building
 
 * `ember build`
+
+## Update GitHub Pages
+
+From a clean master branch:
+
+```sh
+ember github-pages:commit --environment=gh-pages
+```
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
