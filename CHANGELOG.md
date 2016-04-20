@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.5.0] - 2016-04-13
 ### Changed
+- Fix `Ember.assign` in 2.5+ to avoid deprecations.
 - Pull jQuery sticky plugin from npm instead of Bower.
 
 ## [0.4.0] - 2016-04-13

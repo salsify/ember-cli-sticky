@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+const assign = Ember.assign || Ember.merge;
+
 export default Ember.Component.extend({
   tagName: 'div',
   classNames: 'sticky',
@@ -11,7 +13,7 @@ export default Ember.Component.extend({
   }),
 
   mergedOptions: Ember.computed('options', function() {
-    return Ember.merge( this.get('defaultOptions'), this.get('options'));
+    return assign(this.get('defaultOptions'), this.get('options'));
   }),
 
   setupSticky: Ember.on('didInsertElement', function() {
