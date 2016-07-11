@@ -1,4 +1,4 @@
-# Ember-cli-sticky
+# ember-cli-sticky [![Build Status](https://travis-ci.org/salsify/ember-cli-sticky.svg?branch=master)](https://travis-ci.org/salsify/ember-cli-sticky)
 
 Ember addon to integrate jQuery plugin [Sticky.js](http://stickyjs.com/).
 
