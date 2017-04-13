@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-sticky",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Ember addon for Sticky.js.",
   "directories": {
     "doc": "doc",
