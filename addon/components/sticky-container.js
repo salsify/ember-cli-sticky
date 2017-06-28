@@ -21,6 +21,6 @@ export default Ember.Component.extend({
   }),
 
   teardownSticky: Ember.on('willDestroyElement', function() {
-    this.$().unstick();
+    if (this.$()) this.$().unstick();
   }),
 });
