@@ -7,14 +7,14 @@ module.exports = {
 
   options: {
     nodeAssets: {
-      'jquery-sticky': function() {
-        // The jQuery plugin causes FastBoot to crash, so exclude there
-        return {
-          import: ['jquery.sticky.js'],
+      'jquery-sticky': {
+        import: {
+          include: ['jquery.sticky.js'],
+          // The jQuery plugin causes FastBoot to crash, so use fastboot-transform to exclude it
           processTree(input) {
             return fastbootTransform(input);
           }
-        };
+        }
       }
     }
   }
