@@ -1,6 +1,7 @@
 /* jshint node: true */
 'use strict';
 
+const fastbootTransform = require('fastboot-transform');
 module.exports = {
   name: 'ember-cli-sticky',
 
@@ -9,8 +10,10 @@ module.exports = {
       'jquery-sticky': function() {
         // The jQuery plugin causes FastBoot to crash, so exclude there
         return {
-          enabled: !process.env.EMBER_CLI_FASTBOOT,
-          import: ['jquery.sticky.js']
+          import: ['jquery.sticky.js'],
+          processTree(input) {
+            return fastbootTransform(input);
+          }
         };
       }
     }
