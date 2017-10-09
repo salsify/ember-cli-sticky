@@ -20,6 +20,10 @@ export default Ember.Component.extend({
     this.$().sticky( this.get('mergedOptions') );
   }),
 
+  updateSticky: Ember.on('didRender', function() {
+    Ember.run.next(() => this.$().sticky('update'));
+  }),
+
   teardownSticky: Ember.on('willDestroyElement', function() {
     this.$().unstick();
   }),
