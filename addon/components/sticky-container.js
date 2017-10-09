@@ -21,7 +21,11 @@ export default Ember.Component.extend({
   }),
 
   updateSticky: Ember.on('didRender', function() {
-    Ember.run.next(() => this.$().sticky('update'));
+    Ember.run.next(function() {
+      if (this.$().sticky) {
+        this.$().sticky('update');
+      }
+    }, this);
   }),
 
   teardownSticky: Ember.on('willDestroyElement', function() {
