@@ -1,26 +1,27 @@
-import Ember from 'ember';
+import { on } from '@ember/object/evented';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
+import { assign } from '@ember/polyfills';
 
-const assign = Ember.assign || Ember.merge;
-
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: 'div',
   classNames: 'sticky',
   topSpacing: 0,
-  defaultOptions: Ember.computed('topSpacing', function() {
+  defaultOptions: computed('topSpacing', function() {
     return {
       topSpacing: this.get('topSpacing')
     };
   }),
 
-  mergedOptions: Ember.computed('options', function() {
+  mergedOptions: computed('options', function() {
     return assign(this.get('defaultOptions'), this.get('options'));
   }),
 
-  setupSticky: Ember.on('didInsertElement', function() {
+  setupSticky: on('didInsertElement', function() {
     this.$().sticky( this.get('mergedOptions') );
   }),
 
-  teardownSticky: Ember.on('willDestroyElement', function() {
+  teardownSticky: on('willDestroyElement', function() {
     this.$().unstick();
   }),
 });
