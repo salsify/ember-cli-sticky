@@ -2,11 +2,11 @@
 
 Ember addon to integrate jQuery plugin [Sticky.js](http://stickyjs.com/).
 
-## Installation
 
 * `ember install ember-cli-sticky`
 
-## Running
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
 
 * `ember server`
 * Visit your app at http://localhost:4200.
@@ -25,7 +25,7 @@ See [Sticky.js options](https://github.com/garand/sticky#options)
 
 
 
-```js 
+```js
 // ./controllers/index.js
 
 import Ember from 'ember';
@@ -37,13 +37,14 @@ export default Ember.Controller.extend({
 });
 ```
 
-## Running Tests
+Installation
+------------------------------------------------------------------------------
 
 * `ember test`
 * `ember test --server`
 
-## Building
 
-* `ember build`
+Usage
+------------------------------------------------------------------------------
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
