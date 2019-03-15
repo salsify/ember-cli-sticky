@@ -1,4 +1,3 @@
-import { on } from '@ember/object/evented';
 import { computed } from '@ember/object';
 import Component from '@ember/component';
 import { assign } from '@ember/polyfills';
@@ -17,11 +16,11 @@ export default Component.extend({
     return assign(this.get('defaultOptions'), this.get('options'));
   }),
 
-  setupSticky: on('didInsertElement', function() {
+  didInsertElement() {
     this.$().sticky( this.get('mergedOptions') );
-  }),
+  },
 
-  teardownSticky: on('willDestroyElement', function() {
+  willDestroyElement() {
     this.$().unstick();
-  }),
+  },
 });
