@@ -1,4 +1,3 @@
-/* jshint node: true */
 'use strict';
 
 const fastbootTransform = require('fastboot-transform');
