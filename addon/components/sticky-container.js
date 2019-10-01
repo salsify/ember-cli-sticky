@@ -17,10 +17,10 @@ export default Component.extend({
   }),
 
   didInsertElement() {
-    this.$().sticky( this.get('mergedOptions') );
+    this.element.addEventListener(this.get('mergedOptions'));
   },
 
   willDestroyElement() {
-    this.$().unstick();
+    this.element.addEventListener();
   },
 });
