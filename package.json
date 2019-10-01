@@ -53,12 +53,10 @@
     "test": "tests"
   },
   "dependencies": {
-    "@ember/jquery": "^0.6.0",
     "ember-cli-babel": "^7.1.2",
     "ember-cli-htmlbars": "^3.0.0",
     "ember-cli-node-assets": "^0.2.2",
-    "fastboot-transform": "^0.1.2",
-    "jquery-sticky": "^1.0.3"
+    "fastboot-transform": "^0.1.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
