@@ -1,6 +1,7 @@
 import { computed } from '@ember/object';
 import Component from '@ember/component';
 import { assign } from '@ember/polyfills';
+import $ from 'jquery';
 
 export default Component.extend({
   tagName: 'div',
@@ -17,10 +18,10 @@ export default Component.extend({
   }),
 
   didInsertElement() {
-    this.$().sticky( this.get('mergedOptions') );
+    $(this.element).sticky( this.get('mergedOptions') );
   },
 
   willDestroyElement() {
-    this.$().unstick();
+    $(this.element).unstick();
   },
 });
