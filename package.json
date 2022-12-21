@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-sticky",
-  "version": "0.6.6",
+  "version": "1.0.0",
   "description": "Ember addon for Sticky.js.",
   "scripts": {
     "lint:hbs": "ember-template-lint .",
