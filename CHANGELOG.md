@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
 
+## [1.0.0] - 2022-12-21
+### Changed
+- Upgrade `@ember/jquery` to v2.0.0
+- Drop support for node v8 & v10 as a result
+
 ## [0.6.1] - 2016-07-11
 ### Changed
 - Upgrade `ember-cli-htmlbars` dependency to avoid deprecations.

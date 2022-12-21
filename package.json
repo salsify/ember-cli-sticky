@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-sticky",
-  "version": "0.6.6",
+  "version": "1.0.0",
   "description": "Ember addon for Sticky.js.",
   "scripts": {
     "lint:hbs": "ember-template-lint .",
@@ -11,7 +11,7 @@
     "test:all": "ember try:each"
   },
   "engines": {
-    "node": "8.* || >= 10.*"
+    "node": "12.* || 14.* || >= 16"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
@@ -53,7 +53,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "@ember/jquery": "^1.1.0",
+    "@ember/jquery": "^2.0.0",
     "ember-cli-babel": "^7.11.1",
     "ember-cli-htmlbars": "^4.0.0",
     "ember-cli-node-assets": "^0.2.2",

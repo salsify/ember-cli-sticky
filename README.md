@@ -7,7 +7,7 @@ Ember addon to integrate jQuery plugin [Sticky.js](http://stickyjs.com/).
 
 * Ember.js v3.4 or above
 * Ember CLI v2.13 or above
-* Node.js v8 or above
+* Node.js v12 or above
 
 * `ember server`
 * Visit your app at http://localhost:4200.
